@@ -1,27 +1,20 @@
-# Lanyon for Ghost ![Release version](https://img.shields.io/github/release/PxlBuzzard/lanyon-ghost.svg) ![Ghost version](https://img.shields.io/badge/ghost-v0.6.2-blue.svg)
+# Lanyon for Postleaf
 
-[Lanyon](https://github.com/poole/lanyon) is a theme built by [mdo](https://github.com/mdo), originally for [Jekyll](http://jekyllrb.com/). This repository is a conversion of that theme to work with [Ghost](https://ghost.org/).
-
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
-![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
+[Lanyon](https://github.com/poole/lanyon) is a theme built by [mdo](https://github.com/mdo), originally for [Jekyll](http://jekyllrb.com/). This repository is a conversion of that theme to work with [Postleaf](https://www.postleaf.org/).
 
 ## Contents
 
 - [Usage](#usage)
 - [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
   - [Themes](#themes)
   - [Reverse layout](#reverse-layout)
+- [Development](#development)
 - [Author](#author)
 - [License](#license)
 
 ## Options
 
 Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
-
-### Sidebar menu
-
-To populate the sidebar, see the [Ghost documentation for navigation](http://blog.ghost.org/navigation/).
 
 ### Themes
 
@@ -42,7 +35,7 @@ To use a theme, add any one of the available theme classes to the `<body>` eleme
 </body>
 ```
 
-To create your own theme, look to the Themes section of [lanyon.css](https://github.com/PxlBuzzard/lanyon-ghost/blob/master/assets/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
+To create your own theme, look to the Themes section of `lanyon.css`. Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
 
 
 ### Reverse layout
@@ -87,15 +80,27 @@ Show an open sidebar on page load by modifying the `<input>` to add the `checked
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
 ```
 
+## Development
+
+Lanyon has two branches, but only one is used for active development.
+
+- `master` for development.  **All pull requests should be to submitted against `master`.**
+- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+
+
 ## Author
 
 **Mark Otto** - creator
 - <https://github.com/mdo>
 - <https://twitter.com/mdo>
 
-**Daniel Jost** - Ghost conversion
+**Daniel Jost** - Ghost fork
 - <https://github.com/PxlBuzzard>
 - <https://twitter.com/_danieljost_>
+
+**Cory LaViska** - Postleaf fork
+- <https://www.postleaf.org/>
+- <https://twitter.com/postleafapp>
 
 ## License
 

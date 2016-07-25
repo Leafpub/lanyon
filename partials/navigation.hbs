@@ -5,17 +5,23 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{@blog.description}}</p>
+    <p>{{@settings.tagline}}</p>
   </div>
 
   <nav class="sidebar-nav">
-    {{! The code below dynamically generates a sidebar nav of posts tagged as static pages. }}
-    {{#foreach navigation}}
-      <a class="sidebar-nav-item sidebar-nav-{{slug}} {{#if current}}active{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
-    {{/foreach}}
+    {{! The code below dynamically generates the sidebar nav }}
+    {{#navigation}}
+        {{#each items}}
+            <a class="sidebar-nav-item sidebar-nav-{{slug}} {{#if current}}active{{/if}}" href="{{url link}}">{{label}}</a>
+        {{/each}}
+    {{/navigation}}
   </nav>
 
+  <form class="sidebar-search" action="{{search_url}}" method="GET">
+    <input type="search" name="s" placeholder="Search">
+  </form>
+
   <div class="sidebar-item">
-    <p>&copy; {{date format="YYYY"}}. All rights reserved.</p>
+    <p>&copy; {{date format="%Y"}}. All rights reserved.</p>
   </div>
 </div>
