@@ -1,6 +1,6 @@
-# Lanyon for Postleaf
+# Lanyon for Leafpub
 
-[Lanyon](https://github.com/poole/lanyon) is a theme built by [mdo](https://github.com/mdo), originally for [Jekyll](http://jekyllrb.com/). This repository is a conversion of that theme to work with [Postleaf](https://www.postleaf.org/).
+[Lanyon](https://github.com/poole/lanyon) is a theme built by [mdo](https://github.com/mdo), originally for [Jekyll](http://jekyllrb.com/). This repository is a conversion of that theme to work with [Leafpub](https://www.leafpub.org/).
 
 ## Contents
 
@@ -98,9 +98,9 @@ Lanyon has two branches, but only one is used for active development.
 - <https://github.com/PxlBuzzard>
 - <https://twitter.com/_danieljost_>
 
-**Cory LaViska** - Postleaf fork
-- <https://www.postleaf.org/>
-- <https://twitter.com/postleafapp>
+**Cory LaViska** - Leafpub fork
+- <https://www.leafpub.org/>
+- <https://twitter.com/leafpub>
 
 ## License
 
