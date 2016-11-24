@@ -1,6 +1,6 @@
       </div>
     </div>
-
+    {{#is @settings.maintenance 'off'}}
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script>
@@ -21,7 +21,7 @@
         }, false);
       })(document);
     </script>
-
+    {{/is}}
     {{! Leafpub outputs important scripts and data with this tag }}
     {{leafpub_foot}}
   </body>
